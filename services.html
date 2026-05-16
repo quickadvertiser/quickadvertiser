@@ -4,27 +4,195 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SERVICES</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(255,0,128,0.18),
+    transparent 30%),
+
+    radial-gradient(circle at bottom right,
+    rgba(0,195,255,0.15),
+    transparent 30%),
+
+    linear-gradient(135deg,#050816,#0b1120,#020617);
+
+    min-height:100vh;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    padding-top:100px;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+
+    width:100%;
+
+    padding:18px 5%;
+
+    background:rgba(0,0,0,0.85);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+
+    width:70px;
+    height:70px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.logo-text h2{
+
+    font-size:32px;
+
+    font-weight:700;
+
+    line-height:1;
+
+    margin:0;
+}
+
+.logo-text span{
+
+    color:#00bfff;
+
+    letter-spacing:3px;
+
+    font-size:15px;
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:40px;
+}
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#d1d5db;
+
+    font-size:20px;
+
+    font-weight:500;
+
+    transition:0.3s ease;
+
+    position:relative;
+}
+
+.nav-links a::after{
+
+    content:'';
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0%;
+
+    height:2px;
+
+    background:#00bfff;
+
+    transition:0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after{
+
+    width:100%;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+
+    color:white;
+}
+
+.menu-btn{
+
+    display:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:white;
+}
+
+/* ================= HEADING ================= */
+
 .services-heading{
+
     text-align:center;
+
     padding-top:30px;
+
     margin-bottom:40px;
 }
 
 .services-heading h1{
+
     font-size:58px;
+
     font-weight:700;
-    margin:0;
 
     color:white;
-
-    
 }
 
 .services-heading p{
+
     margin-top:12px;
 
     color:#bfc7d5;
@@ -32,34 +200,46 @@
     font-size:20px;
 }
 
+/* ================= SERVICES ================= */
 
+.services-container{
 
-
-
-
-
- .services-container{
     display:grid;
+
     grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
     gap:35px;
+
     padding:60px;
 }
+
 .service-card{
+
     position:relative;
+
     background:rgba(255,255,255,0.08);
+
     border:1px solid rgba(255,255,255,0.15);
+
     backdrop-filter:blur(15px);
+
     border-radius:25px;
+
     overflow:hidden;
+
     transition:0.4s ease;
+
     box-shadow:0 8px 32px rgba(0,0,0,0.3);
+
     display:flex;
+
     flex-direction:column;
 
     min-height:420px;
 }
 
 .service-card:hover{
+
     transform:translateY(-12px) scale(1.03);
 
     box-shadow:
@@ -68,58 +248,55 @@
 }
 
 .service-card img{
-   
- 
-     width: 100%;
-    height: 250px; 
-    object-fit: cover;
-    display: block;
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:0.4s ease;
 }
 
 .service-card:hover img{
+
     transform:scale(1.08);
 }
-body{
-    margin:0;
-    padding:0;
-    font-family:'Poppins',sans-serif;
 
-    background:
-    radial-gradient(circle at top left,
-    rgba(255,0,128,0.18),
-    transparent 30%),
-
-
-    radial-gradient(circle at bottom right,
-    rgba(0,195,255,0.15),
-    transparent 30%),
-
-
-    linear-gradient(135deg,#050816,#0b1120,#020617);
-
-    min-height:100vh;
-    color:white;
-    overflow-x:hidden;
-}
 .service-card h3{
+
     font-size:28px;
+
     padding:25px 25px 10px;
+
     margin:0;
 }
 
 .service-card p{
+
     color:#d1d5db;
-    padding:0 25px;
+
+    padding:0 25px 25px;
+
     line-height:1.7;
+
     font-size:16px;
+
     flex-grow:1;
 }
+
 .service-card::before{
+
     content:'';
+
     position:absolute;
+
     inset:0;
 
     border-radius:25px;
+
     padding:1px;
 
     background:linear-gradient(
@@ -133,272 +310,242 @@ body{
     linear-gradient(#fff 0 0);
 
     -webkit-mask-composite:xor;
-            mask-composite:exclude;
+
+    mask-composite:exclude;
 
     pointer-events:none;
 }
 
+/* ================= MOBILE ================= */
 
-
-/* NAVBAR */
-
-
-    .navbar{
-      width:100%;
-padding:18px 5%;
-box-sizing:border-box;
-      background:rgba(0,0,0,0.85);
-      backdrop-filter:blur(10px);
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      position:sticky;
-      top:0;
-      z-index:1000;
-      border-bottom:1px solid rgba(255,255,255,0.08);
-    }
-
-    .logo{
-      display:flex;
-      align-items:center;
-      gap:15px;
-    }
-
-    .logo img{
-    width:70px;
-    height:70px;
-    object-fit:cover;
-    border-radius:18px;
-    border:1px solid rgba(255,255,255,0.1);
-}
-
-    .logo-text h2{
-      font-size:32px;
-      font-weight:700;
-      line-height:1;
-      margin:0;
-    }
-
-    .logo-text span{
-      color:#00bfff;
-      color:#00bfff;
-    letter-spacing:3px;
-    font-size:15px;
-      font-size:15px;
-    }
-
-    .nav-links{
-      display:flex;
-      gap:40px;
-    }
-
-    .nav-links a{
-      text-decoration:none;
-      color:#d1d5db;
-      font-size:20px;
-      font-weight:500;
-      transition:0.3s ease;
-      position:relative;
-    }
-
-    .nav-links a::after{
-      content:'';
-      position:absolute;
-      left:0;
-      bottom:-6px;
-      width:0%;
-      height:2px;
-      background:#00bfff;
-      transition:0.3s ease;
-    }
-
-    .nav-links a:hover{
-      color:white;
-    }
-
-    .nav-links a:hover::after{
-      width:100%;
-    }
-    .nav-links a.active::after{
-    width:100%;
-}
-
-.nav-links a.active{
-    color:white;
-}
 @media(max-width:900px){
 
     .navbar{
-        flex-direction:column;
-        gap:20px;
+
+        padding:15px 5%;
+    }
+
+    .menu-btn{
+
+        display:block;
     }
 
     .nav-links{
-        gap:20px;
+
+        position:fixed;
+
+        top:90px;
+
+        right:-100%;
+
+        width:100%;
+
+        background:rgba(0,0,0,0.96);
+
         flex-direction:column;
-      
-        justify-content:center;
+
+        align-items:center;
+
+        gap:30px;
+
+        padding-top:40px;
+
+        padding-bottom:40px;
+
+        transition:0.4s ease;
     }
 
-    .contact-hero h1{
-        font-size:52px;
+    .nav-links.active{
+
+        right:0;
     }
 
-    .contact-hero p{
+    .services-heading h1{
+
+        font-size:42px;
+    }
+
+    .services-heading p{
+
         font-size:18px;
     }
 
-    .form-box{
-        padding:35px 25px;
+    .services-container{
+
+        padding:25px;
     }
 
-    .form-box h2{
-        font-size:38px;
+    .logo img{
+
+        width:55px;
+        height:55px;
     }
 
-    .cta h2{
-        font-size:38px;
+    .logo-text h2{
+
+        font-size:24px;
     }
-
-}
-/* LOGO AREA */
-
-
-
-
-
-/* brand text */
-.brand-text{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-
-    line-height:1.1;
-
-    margin-top:4px;
 }
 
-.brand-main{
-    color: white;
+</style>
 
-    font-size: 18px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-}
-
-.brand-sub{
-    color: #00c3ff;
-
-    font-size: 11px;
-
-    font-weight: 500;
-
-    letter-spacing: 3px;
-
-    margin-top: 4px;
-}
-
-
-
-
-/* body{
-    padding-top: 90px;
-} */
-
-/* ===== MOBILE ===== */
-
-
-
-
-    </style>
 </head>
-<body>
-    <!-- NAVBAR -->
 
-     <nav class="navbar">
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
 
     <div class="logo">
-      <img src="quick adver logo.png" alt="logo">
 
-      <div class="logo-text">
-        <h2>QUICK</h2>
-        <span>ADVERTISERS</span>
-      </div>
+        <img src="quick adver logo.png" alt="logo">
+
+        <div class="logo-text">
+
+            <h2>QUICK</h2>
+
+            <span>ADVERTISERS</span>
+
+        </div>
+
     </div>
 
+    <div class="menu-btn">☰</div>
+
     <div class="nav-links">
-    <a target="_blank"  href="index.html">Home</a>
-    <a href="services.html" class="active">Services</a>
-    <a target="_blank" href="about.html">About</a>
-    <a target="_blank" href="contact.html">Contact</a>
-</div>
 
-  </nav>
+        <a href="index.html">Home</a>
 
-    <section class="services-heading">
+        <a href="services.html" class="active">Services</a>
+
+        <a href="about.html">About</a>
+
+        <a href="contact.html">Contact</a>
+
+    </div>
+
+</nav>
+
+<!-- HEADING -->
+
+<section class="services-heading">
+
     <h1>OUR SERVICES</h1>
+
     <p>Powerful Advertising Solutions For Your Brand</p>
+
 </section>
 
-    <div class="services-container">
+<!-- SERVICES -->
 
-  <div class="service-card">
-    <img src="auto.jpeg">
-    <h3>Auto and Rickshaw </h3>
-    <p>Promote your business on moving autos and rickshaws across the city.</p>
-    
-  </div>
-
-  <div class="service-card">
-    <img src="bus.jpg">
-    <h3>Bus Advertising</h3>
-    <p>Reach thousands daily with bus branding.</p>
-    
-  </div>
-
-  <div class="service-card">
-    <img src="digital marketing.png">
-    <h3>DIGITAL MARKETING</h3>
-    <p>GROW YOUR BUSINESS BY DOING IT'S DIGITAL MARKETING BY US</p>
-    
-  </div>
-
-    
+<div class="services-container">
 
     <div class="service-card">
-    <img src="wall wrap.png">
-    <h3>WALL WRAP</h3>
-    <p>Wall Wrap Advertising
-Turn empty walls into powerful advertisements.
-Make your business visible to thousands every day.</p>
-    
-  </div>
+
+        <img src="auto.jpeg">
+
+        <h3>Auto and Rickshaw</h3>
+
+        <p>
+            Promote your business on moving autos and rickshaws across the city.
+        </p>
+
+    </div>
+
     <div class="service-card">
-    <img src="led board.jpeg">
-    <h3>LED BOARD</h3>
-    <p>LED Board Advertising
-Bright and eye-catching displays for your business.
-Reach more people day and night with LED promotion.</p>
-    
-  </div>
+
+        <img src="bus.jpg">
+
+        <h3>Bus Advertising</h3>
+
+        <p>
+            Reach thousands daily with bus branding.
+        </p>
+
+    </div>
+
     <div class="service-card">
-    <img src="newspaper-advertising-500x500.jpg">
-    <h3>NEWS PAPER ADVERTISING</h3>
-    <p>Newspaper Advertising
-Promote your business through trusted daily newspapers.
-Reach thousands of readers with effective print advertising.</p>
-    
-  </div>
+
+        <img src="digital marketing.png">
+
+        <h3>DIGITAL MARKETING</h3>
+
+        <p>
+            GROW YOUR BUSINESS BY DOING IT'S DIGITAL MARKETING BY US
+        </p>
+
+    </div>
+
     <div class="service-card">
-    <img src="in shop branding.jpg">
-    <h3>IN SHOP BRANDING</h3>
-    <p>In-Shop Branding
-Make your shop look more attractive and professional.
-Create a strong brand impression for every customer.</p>
-    
-  </div>
+
+        <img src="wall wrap.png">
+
+        <h3>WALL WRAP</h3>
+
+        <p>
+            Turn empty walls into powerful advertisements.
+            Make your business visible to thousands every day.
+        </p>
+
+    </div>
+
+    <div class="service-card">
+
+        <img src="led board.jpeg">
+
+        <h3>LED BOARD</h3>
+
+        <p>
+            Bright and eye-catching displays for your business.
+            Reach more people day and night with LED promotion.
+        </p>
+
+    </div>
+
+    <div class="service-card">
+
+        <img src="newspaper-advertising-500x500.jpg">
+
+        <h3>NEWS PAPER ADVERTISING</h3>
+
+        <p>
+            Promote your business through trusted daily newspapers.
+            Reach thousands of readers with effective print advertising.
+        </p>
+
+    </div>
+
+    <div class="service-card">
+
+        <img src="in shop branding.jpg">
+
+        <h3>IN SHOP BRANDING</h3>
+
+        <p>
+            Make your shop look more attractive and professional.
+            Create a strong brand impression for every customer.
+        </p>
+
+    </div>
+
 </div>
+
+<!-- JS -->
+
+<script>
+
+const menuBtn = document.querySelector('.menu-btn');
+
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', ()=>{
+
+    navLinks.classList.toggle('active');
+
+});
+
+</script>
+
 </body>
 </html>
