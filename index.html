@@ -1,15 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Quick Advertisers | Outdoor Advertising Agency in MP Gwalior
+    </title>
+
+    <meta name="description"
+    content="Quick Advertisers is a professional advertising agency in Gwalior  providing hoardings, auto branding, flex printing, newspaper advertising,    digital marketing, LED boards, and outdoor advertising services across Madhya  Pradesh.">
+
+    <meta name="keywords"
+    content="advertising agency in bhopal, outdoor advertising, hoardings, flex printing, vehicle branding, auto branding, digital marketing agency, newspaper advertising, LED board advertising, branding agency in MP">
+
+    <meta name="author" content="Quick Advertisers">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="theme-color" content="#020617">
+
+    <link rel="canonical" href="https://yourwebsite.com/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" as="image" href="beauty.jpg">
+
+    <link rel="preload" as="image" href="photo1.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <title>QUICK ADVERTISERS</title>
 
 <style>
 
@@ -19,7 +45,12 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
+
     font-family:'Poppins',sans-serif;
 
     background:
@@ -34,6 +65,7 @@ body{
     linear-gradient(135deg,#050816,#0b1120,#020617);
 
     color:white;
+
     overflow-x:hidden;
 
     padding-top:100px;
@@ -42,16 +74,23 @@ body{
 /* NAVBAR */
 
 .navbar{
+
     width:100%;
+
     padding:18px 5%;
+
     background:rgba(0,0,0,0.85);
+
     backdrop-filter:blur(10px);
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     position:fixed;
+
     top:0;
     left:0;
 
@@ -61,50 +100,77 @@ body{
 }
 
 .logo{
+
     display:flex;
+
     align-items:center;
+
     gap:12px;
 }
 
 .logo img{
+
     width:70px;
+
     height:70px;
+
     border-radius:18px;
+
     object-fit:cover;
+
+    border:1px solid rgba(255,255,255,0.1);
 }
 
 .logo-text h2{
+
     font-size:32px;
+
     margin:0;
+
     line-height:1;
 }
 
 .logo-text span{
+
     color:#00bfff;
+
     letter-spacing:3px;
+
     font-size:14px;
 }
 
 .nav-links{
+
     display:flex;
+
     gap:40px;
 }
 
 .nav-links a{
+
     text-decoration:none;
+
     color:#d1d5db;
+
     font-size:20px;
+
     position:relative;
+
     transition:0.3s ease;
 }
 
 .nav-links a::after{
+
     content:'';
+
     position:absolute;
+
     left:0;
+
     bottom:-6px;
 
     width:0%;
+
     height:2px;
 
     background:#00bfff;
@@ -114,18 +180,24 @@ body{
 
 .nav-links a:hover::after,
 .nav-links .active::after{
+
     width:100%;
 }
 
 .nav-links a:hover,
 .nav-links .active{
+
     color:white;
 }
 
 .menu-btn{
+
     display:none;
+
     font-size:34px;
+
     cursor:pointer;
+
     color:white;
 }
 
@@ -136,25 +208,31 @@ body{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('beauty.jpg');
 
     background-size:cover;
+
     background-position:center;
+
     background-repeat:no-repeat;
 }
 
-h1{
+.hero-section h1{
+
     font-size:4rem;
+
     font-weight:800;
+
     text-shadow:0 0 12px rgba(0,0,0,0.8);
 }
 
-p{
+.hero-section p{
+
     font-size:20px;
 }
 
-/* CARDS */
+/* SERVICES */
 
 .service-glass-card{
 
@@ -183,15 +261,24 @@ p{
 }
 
 .section-title{
+
     text-align:center;
+
     font-size:48px;
+
     font-weight:700;
+
     margin-bottom:50px;
 }
 
+/* GALLERY */
+
 .gallery-img{
+
     width:100%;
+
     height:250px;
+
     object-fit:cover;
 
     border-radius:20px;
@@ -200,8 +287,11 @@ p{
 }
 
 .gallery-img:hover{
+
     transform:scale(1.03);
 }
+
+/* STATS */
 
 .stats-section{
 
@@ -215,7 +305,24 @@ p{
 }
 
 .counter{
+
     color:#00bfff;
+}
+
+/* FOOTER */
+
+.footer{
+
+    background:rgba(0,0,0,0.6);
+
+    border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.footer a{
+
+    color:#00bfff;
+
+    text-decoration:none;
 }
 
 /* MOBILE */
@@ -248,6 +355,7 @@ p{
         gap:30px;
 
         padding-top:40px;
+
         padding-bottom:40px;
 
         transition:0.4s ease;
@@ -257,36 +365,48 @@ p{
         right:0;
     }
 
-    h1{
+    .hero-section h1{
+
         font-size:3rem;
+
         line-height:1.2;
     }
 
-    p{
+    .hero-section p{
+
         font-size:18px;
     }
 
     .hero-section{
+
         min-height:auto;
+
         padding-top:140px;
+
         padding-bottom:60px;
     }
 
     .btn{
+
         width:100%;
+
         margin-bottom:12px;
     }
 
     .logo img{
+
         width:55px;
+
         height:55px;
     }
 
     .logo-text h2{
+
         font-size:24px;
     }
 
     .section-title{
+
         font-size:34px;
     }
 }
@@ -297,17 +417,23 @@ p{
 
 <body>
 
+<header>
+
 <!-- NAVBAR -->
 
 <nav class="navbar">
 
     <div class="logo">
 
-        <img src="quick adver logo.png" alt="logo">
+        <img src="quick adver logo.png"
+        alt="Quick Advertisers Logo">
 
         <div class="logo-text">
+
             <h2>QUICK</h2>
+
             <span>ADVERTISERS</span>
+
         </div>
 
     </div>
@@ -317,15 +443,22 @@ p{
     <div class="nav-links">
 
         <a href="index.html" class="active">Home</a>
+
         <a href="services.html">Services</a>
+
         <a href="about.html">About</a>
+
         <a href="contact.html">Contact</a>
 
     </div>
 
 </nav>
 
+</header>
+
 <!-- HERO -->
+
+<main>
 
 <section class="hero-section text-center text-white d-flex align-items-center">
 
@@ -336,21 +469,26 @@ p{
         </h1>
 
         <p class="lead mt-3">
-            All Types of Outdoor Advertising Solutions
+            Professional Outdoor Advertising Solutions Across Madhya Pradesh
         </p>
 
         <p class="mt-2">
-            Bhopal • Indore • Jabalpur • Gwalior • All Across MP
+            Based in Gwalior • Serving All Across Madhya Pradesh
         </p>
 
-        <a href="https://wa.me/918770999604" target="_blank"
+        <a href="https://wa.me/918770999604"
+        target="_blank"
         class="btn btn-success btn-lg mt-3 px-4 py-3 me-2 shadow">
+
             💬 Chat on WhatsApp
+
         </a>
 
         <a href="tel:+918770999604"
         class="btn btn-primary btn-lg mt-3 px-4 py-3 shadow">
+
             📞 Call Now for Instant Booking
+
         </a>
 
     </div>
@@ -359,79 +497,145 @@ p{
 
 <!-- SERVICES -->
 
-<div class="container py-5">
+<section class="container py-5">
 
-    <h2 class="text-center fw-bold mb-5">
+    <h2 class="section-title">
         Our Advertising Services
     </h2>
 
     <div class="row justify-content-center g-4">
 
         <div class="col-md-3 d-flex">
+
             <div class="service-glass-card p-4 h-100 w-100">
-                <h5 class="fw-bold">🏢 Hoardings</h5>
-                <p>Outdoor billboard advertising solutions</p>
+
+                <h3 class="fw-bold fs-4">
+                    🏢 Hoardings
+                </h3>
+
+                <p>
+                    Premium outdoor billboard advertising solutions for maximum brand visibility.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-3 d-flex">
+
             <div class="service-glass-card p-4 h-100 w-100">
-                <h5 class="fw-bold">🖨 Flex Printing</h5>
-                <p>High-quality banner printing</p>
+
+                <h3 class="fw-bold fs-4">
+                    🖨 Flex Printing
+                </h3>
+
+                <p>
+                    High-quality flex banner printing services for businesses and promotions.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-3 d-flex">
+
             <div class="service-glass-card p-4 h-100 w-100">
-                <h5 class="fw-bold">📱 Digital Marketing</h5>
-                <p>All digital marketing solution</p>
+
+                <h3 class="fw-bold fs-4">
+                    📱 Digital Marketing
+                </h3>
+
+                <p>
+                    Complete digital marketing solutions including social media and online advertising.
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-3 d-flex">
+
             <div class="service-glass-card p-4 h-100 w-100">
-                <h5 class="fw-bold">📰 Newspaper Branding</h5>
-                <p>Cover's all newspaper</p>
+
+                <h3 class="fw-bold fs-4">
+                    📰 Newspaper Branding
+                </h3>
+
+                <p>
+                    Newspaper Advertising in Dainik Bhaskar, Patrika & Leading Newspapers
+                </p>
+
             </div>
+
         </div>
 
         <div class="col-md-3 d-flex justify-content-center mt-2">
+
             <div class="service-glass-card p-4 h-100 w-100">
-                <h5 class="fw-bold">🚖 Vehicle Ads</h5>
-                <p>Branding on Rickshaw, buses, Auto</p>
+
+                <h3 class="fw-bold fs-4">
+                    🚖 Vehicle Ads
+                </h3>
+
+                <p>
+                    Auto, bus, and vehicle branding services to promote your business on the move.
+                </p>
+
             </div>
+
         </div>
 
     </div>
 
-</div>
+</section>
 
 <!-- STATS -->
 
 <section class="stats-section py-5 text-center">
 
-  <div class="container">
+    <div class="container">
 
-    <div class="row">
+        <div class="row">
 
-      <div class="col-md-4">
-        <h2 class="fw-bold counter">500+</h2>
-        <p>Campaigns Completed</p>
-      </div>
+            <div class="col-md-4">
 
-      <div class="col-md-4">
-        <h2 class="fw-bold counter">20+</h2>
-        <p>Cities Covered</p>
-      </div>
+                <h2 class="fw-bold counter">
+                    200+
+                </h2>
 
-      <div class="col-md-4">
-        <h2 class="fw-bold counter">100+</h2>
-        <p>Active Advertisements</p>
-      </div>
+                <p>
+                    Campaigns Completed
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2 class="fw-bold counter">
+                    20+
+                </h2>
+
+                <p>
+                    Cities Covered
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h2 class="fw-bold counter">
+                    10+
+                </h2>
+
+                <p>
+                    Active Advertisements
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
-
-  </div>
 
 </section>
 
@@ -442,41 +646,63 @@ p{
     <div class="container">
 
         <h2 class="section-title">
-            Our Recent Campaigns
+            Our Recent Advertising Campaigns
         </h2>
 
         <div class="row g-4">
 
             <div class="col-md-4">
-                <img src="photo1.png" class="gallery-img">
+                <img src="photo1.png"
+                class="gallery-img"
+                alt="Outdoor advertising campaign">
             </div>
 
             <div class="col-md-4">
-                <img src="muthoot1.jpeg" class="gallery-img">
+                <img src="muthoot1.jpeg"
+                class="gallery-img"
+                alt="Muthoot advertising campaign">
             </div>
 
             <div class="col-md-4">
-                <img src="photo8.jpeg" class="gallery-img">
+                <img src="photo8.jpeg"
+                class="gallery-img"
+                alt="Brand promotion campaign">
             </div>
 
             <div class="col-md-4">
-                <img src="photo4.jpeg" class="gallery-img">
+                <img src="photo4.jpeg"
+                class="gallery-img"
+                alt="Vehicle branding campaign">
             </div>
 
             <div class="col-md-4">
-                <img src="photo5.jpeg" class="gallery-img">
+                <img src="photo5.jpeg"
+                class="gallery-img"
+                alt="Outdoor flex branding">
             </div>
 
             <div class="col-md-4">
-                <img src="photo6.jpeg" class="gallery-img">
+                <img src="photo6.jpeg"
+                class="gallery-img"
+                alt="Advertising project">
             </div>
 
             <div class="col-md-4">
-                <img src="ZEROB.jpeg" class="gallery-img">
+                <img src="ZEROB.jpeg"
+                class="gallery-img"
+                alt="Outdoor hoarding advertisement">
             </div>
 
             <div class="col-md-4">
-                <img src="I LOVE GWALIOR.jpeg" class="gallery-img">
+                <img src="I LOVE GWALIOR.jpeg"
+                class="gallery-img"
+                alt="City branding campaign">
+            </div>
+
+            <div class="col-md-4">
+                <img src="stairs.jpeg"
+                class="gallery-img"
+                alt="Creative staircase branding">
             </div>
 
         </div>
@@ -485,15 +711,37 @@ p{
 
 </section>
 
+</main>
+
+<!-- FOOTER -->
+
+<footer class="footer text-center py-4">
+
+    <p>
+        © 2026 Quick Advertisers | Advertising Agency in Gwalior
+    </p>
+
+    <p>
+        Contact:
+        <a href="tel:+918770999604">
+            +91 8770999604
+        </a>
+    </p>
+
+</footer>
+
 <!-- JS -->
 
 <script>
 
 const menuBtn = document.querySelector('.menu-btn');
+
 const navLinks = document.querySelector('.nav-links');
 
 menuBtn.addEventListener('click', ()=>{
+
     navLinks.classList.toggle('active');
+
 });
 
 </script>
@@ -501,5 +749,5 @@ menuBtn.addEventListener('click', ()=>{
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
-</html>
 
+</html>

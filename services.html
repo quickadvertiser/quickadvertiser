@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERVICES</title>
+
+    <title>Quick Advertisers | Outdoor Advertising & Branding Services</title>
+
+    <meta name="description" content="Quick Advertisers provides professional outdoor advertising services including auto branding, in-shop branding, LED boards, wall wraps, newspaper advertising, and digital marketing solutions.">
+
+    <meta name="keywords" content="advertising agency, auto branding, shop branding, LED board advertising, digital marketing, wall wrap branding, newspaper advertising, outdoor advertising">
+
+    <meta name="author" content="Quick Advertisers">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="preload" as="image" href="auto1.jpeg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -19,6 +34,7 @@
 }
 
 body{
+
     font-family:'Poppins',sans-serif;
 
     background:
@@ -70,14 +86,18 @@ body{
 }
 
 .logo{
+
     display:flex;
+
     align-items:center;
+
     gap:15px;
 }
 
 .logo img{
 
     width:70px;
+
     height:70px;
 
     object-fit:cover;
@@ -94,8 +114,6 @@ body{
     font-weight:700;
 
     line-height:1;
-
-    margin:0;
 }
 
 .logo-text span{
@@ -187,8 +205,6 @@ body{
     font-size:58px;
 
     font-weight:700;
-
-    color:white;
 }
 
 .services-heading p{
@@ -247,23 +263,50 @@ body{
     0 0 50px rgba(255,0,204,0.3);
 }
 
-.service-card img{
+/* ================= SLIDER ================= */
+
+.slider{
+
+    position:relative;
 
     width:100%;
 
     height:250px;
 
-    object-fit:cover;
-
-    display:block;
-
-    transition:0.4s ease;
+    overflow:hidden;
 }
 
-.service-card:hover img{
+.slide{
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:
+    opacity 1s ease,
+    transform 0.5s ease;
+}
+
+.slide.active{
+
+    opacity:1;
+}
+
+.service-card:hover .slide.active{
 
     transform:scale(1.08);
 }
+
+/* ================= CARD TEXT ================= */
 
 .service-card h3{
 
@@ -393,13 +436,15 @@ body{
 
 <body>
 
+<header>
+
 <!-- NAVBAR -->
 
 <nav class="navbar">
 
     <div class="logo">
 
-        <img src="quick adver logo.png" alt="logo">
+        <img src="quick adver logo.png" alt="Quick Advertisers Logo">
 
         <div class="logo-text">
 
@@ -427,6 +472,8 @@ body{
 
 </nav>
 
+</header>
+
 <!-- HEADING -->
 
 <section class="services-heading">
@@ -439,101 +486,143 @@ body{
 
 <!-- SERVICES -->
 
-<div class="services-container">
+<main class="services-container">
+
+    <!-- AUTO -->
 
     <div class="service-card">
 
-        <img src="auto.jpeg">
+        <div class="slider">
 
-        <h3>Auto and Rickshaw</h3>
+            <img src="auto1.jpeg" class="slide active" alt="Auto rickshaw branding advertisement">
+
+            <img src="auto2.jpg" class="slide" alt="Outdoor auto advertising campaign">
+
+            <img src="auto3.jpg" class="slide" alt="Moving auto branding promotion">
+
+        </div>
+
+        <h3>Auto and Rickshaw Branding</h3>
 
         <p>
-            Promote your business on moving autos and rickshaws across the city.
+            Promote your business across the city with creative auto and rickshaw branding solutions that help your brand reach thousands of people daily.
         </p>
 
     </div>
 
+    <!-- IN SHOP -->
+
     <div class="service-card">
 
-        <img src="bus.jpg">
+        <div class="slider">
 
-        <h3>Bus Advertising</h3>
+            <img src="in shop branding 2.jpg" class="slide active" alt="Professional in shop branding display">
+
+            <img src="in shop branding.jpg" class="slide" alt="Retail store branding setup">
+
+           
+
+        </div>
+
+        <h3>In Shop Branding</h3>
 
         <p>
-            Reach thousands daily with bus branding.
+            Make your store visually appealing and professionally branded to create a strong and lasting impression on every customer.
         </p>
 
     </div>
 
+    <!-- DIGITAL -->
+
     <div class="service-card">
 
-        <img src="digital marketing.png">
+        <div class="slider">
 
-        <h3>DIGITAL MARKETING</h3>
+            <img src="digital marketing.png" class="slide active" alt="Digital marketing services">
+
+            
+
+        </div>
+
+        <h3>Digital Marketing</h3>
 
         <p>
-            GROW YOUR BUSINESS BY DOING IT'S DIGITAL MARKETING BY US
+            Grow your business with result-driven digital marketing strategies including social media promotion and online branding.
         </p>
 
     </div>
 
+    <!-- WALL WRAP -->
+
     <div class="service-card">
 
-        <img src="wall wrap.png">
+        <div class="slider">
 
-        <h3>WALL WRAP</h3>
+            <img src="wall wrap.png" class="slide active" alt="Wall wrap advertising design">
+
+            
+
+        </div>
+
+        <h3>Wall Wrap Advertising</h3>
 
         <p>
-            Turn empty walls into powerful advertisements.
-            Make your business visible to thousands every day.
+            Turn empty walls into powerful advertisements and make your business visible to thousands of people every day.
         </p>
 
     </div>
 
+    <!-- LED -->
+
     <div class="service-card">
 
-        <img src="led board.jpeg">
+        <div class="slider">
 
-        <h3>LED BOARD</h3>
+            <img src="led board.jpeg" class="slide active" alt="LED advertising board">
+
+            <img src="led board 1.avif" class="slide" alt="Digital LED display board">
+
+            
+
+        </div>
+
+        <h3>LED Board Advertising</h3>
 
         <p>
-            Bright and eye-catching displays for your business.
-            Reach more people day and night with LED promotion.
+            Bright and eye-catching LED displays help your business attract attention both day and night.
         </p>
 
     </div>
 
+    <!-- NEWSPAPER -->
+
     <div class="service-card">
 
-        <img src="newspaper-advertising-500x500.jpg">
+        <div class="slider">
 
-        <h3>NEWS PAPER ADVERTISING</h3>
+            <img src="newspaper-advertising-500x500.jpg" class="slide active" alt="Newspaper advertising campaign">
+
+            <img src="news2.jpg" class="slide" alt="Print media advertisement">
+
+            
+
+        </div>
+
+        <h3>Newspaper Advertising</h3>
 
         <p>
-            Promote your business through trusted daily newspapers.
-            Reach thousands of readers with effective print advertising.
+            Promote your business through trusted newspaper advertising campaigns and reach thousands of daily readers.
         </p>
 
     </div>
 
-    <div class="service-card">
-
-        <img src="in shop branding.jpg">
-
-        <h3>IN SHOP BRANDING</h3>
-
-        <p>
-            Make your shop look more attractive and professional.
-            Create a strong brand impression for every customer.
-        </p>
-
-    </div>
-
-</div>
+</main>
 
 <!-- JS -->
 
 <script>
+
+/* MOBILE MENU */
 
 const menuBtn = document.querySelector('.menu-btn');
 
@@ -545,7 +634,31 @@ menuBtn.addEventListener('click', ()=>{
 
 });
 
+
+/* UNIVERSAL SLIDER */
+
+const sliders = document.querySelectorAll('.slider');
+
+sliders.forEach((slider)=>{
+
+    const slides = slider.querySelectorAll('.slide');
+
+    let index = 0;
+
+    setInterval(()=>{
+
+        slides[index].classList.remove('active');
+
+        index = (index + 1) % slides.length;
+
+        slides[index].classList.add('active');
+
+    },2500);
+
+});
+
 </script>
 
 </body>
+
 </html>
